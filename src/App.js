@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Router basename='/index.html'>
         <Routes>
-          <Route exact path='/home' element = {<Home />} /> 
+          <Route path='/home' exact element = {<Home />} /> 
         </Routes>
         <Routes>
           < Route path='/header' element = {<Header />} />
