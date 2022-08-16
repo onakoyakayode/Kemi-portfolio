@@ -10,9 +10,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Router basename='/index.html'>
+      <Router>
         <Routes>
-          <Route path='/home' exact element = {<Home />} /> 
+          <Route exact path='/' element = {<Home />} /> 
         </Routes>
         <Routes>
           < Route path='/header' element = {<Header />} />

@@ -19,7 +19,7 @@ const Header = () => {
                 <div className="header-page-container">
                     <h1 className="header-title">TemiKemi</h1>
                     <ul className='header-list'>
-                        <h4><Link to='/home'>Home</Link></h4>
+                        <h4><Link to='/'>Home</Link></h4>
                         <h4><Link to='/portfolio'>Portfolio</Link></h4>
                         <h4><Link to='/resume'>Resume</Link></h4>
                         <h4><Link to='/contact'>Contact</Link></h4>
