@@ -1,0 +1,89 @@
+.header-container {
+    padding: 40px 100px;
+}
+
+.header-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+.header-title {
+
+}
+
+
+.header-list {
+    display: flex;
+}
+
+.header-list > h4 {
+    padding-inline: 20px;
+}
+
+.header-list > h4 > a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.header-description {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-description-intro {
+    width: 100vw;
+}
+
+.header-description-title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+}
+
+.header-description-title span {
+    display: block;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    font-weight: 700;
+}
+
+.header-img {
+    width: 70%;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+img.header-img {
+    border-radius: 100% !important;
+}
+
+
+.footer {
+    background: #000;
+    padding: 25px 100px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer small {
+    font-size: 1rem
+}
+
+.footer h3 {
+    font-size: 1rem;
+}
+
+.footer h3 span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #7ED57B;
+    cursor: pointer;
+}

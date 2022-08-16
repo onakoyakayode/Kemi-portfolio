@@ -1,0 +1,110 @@
+.portfolio-header-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem 3rem;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.projects-container .projects-list {
+    padding: 25px;
+    background: #fff;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-list .project-img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 25px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.144);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+.projects-list .project-img:hover {
+    transform: scale(1.1);
+}
+
+.projects-list .project-heading {
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #348EFF;
+}
+
+.projects-list .project-heading1 {
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #FFAEDC;
+}
+
+.projects-list .project-heading2 {
+    color: #7ED57B;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.projects-list .project-heading3 {
+    color: #C88DBE;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.projects-list .project-heading4 {
+    color: #FFc600;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.projects-list .project-heading5 {
+    color: #FF8066;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.resume-link {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.resume-link::before {
+    position: absolute;
+    content: "\2192";
+    left: 40%;
+    bottom: 0;
+}
+
+.resume-link a {
+    text-decoration: underline;
+    color: #ff330a;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+}
