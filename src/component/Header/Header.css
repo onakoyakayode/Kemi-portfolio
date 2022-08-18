@@ -1,5 +1,82 @@
+.new-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .new-header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .new-header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .new-header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .new-header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .new-header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
 .header-container {
     padding: 40px 100px;
+    flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        padding: 20px 10px;
+        flex: 1;
+    }    
+}
+
+@media only screen and (min-width: 600px) {
+    .header-container {
+        padding: 30px 20px;
+        flex: 1;
+    } 
+}
+
+@media only screen and (min-width: 900px) {
+    .header-container {
+        padding: 20px;
+    } 
+}
+
+@media only screen and (min-width: 1200px) {
+    .header-container {
+        padding: 20px 50px;
+    } 
+}
+
+@media only screen and (min-width: 1200px) {
+    .header-container {
+        padding: 50px 100px;
+    } 
 }
 
 .header-page-container {
@@ -9,18 +86,182 @@
     margin-bottom: 6%;
 }
 
-.header-title {
-
+@media only screen and (max-width: 600px) {
+    .header-page-container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 18%;
+    } 
 }
 
+@media only screen and (min-width: 600px) {
+    .header-page-container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 22%;
+    } 
+}
+
+@media only screen and (min-width: 900px) {
+    .header-page-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12%;
+    } 
+}
+
+@media only screen and (min-width: 1200px) {
+    .header-page-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10%;
+    } 
+}
+
+@media only screen and (min-width: 1200px) {
+    .header-page-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10%;
+    } 
+}
+
+.header-title {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header-title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-title {
+        font-size: 2.3rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header-title {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .header-title {
+        font-size: 3.2rem;
+        width: 100%;
+    }
+}
 
 .header-list {
     display: flex;
 }
 
+@media only screen and (max-width: 600px) {
+    .header-list {
+        flex-direction: column;
+        margin-top: 0rem;
+        padding-top: 3rem;
+        width: 100%;
+        margin-inline: auto;
+        position: absolute;
+        background: #fff;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header-list {
+        flex-direction: column;
+        padding-top: 3rem;
+        width: 100%;
+        margin-inline: auto;
+        position: absolute;
+        background: #fff;
+        height: 60vh;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        height: 10vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header-list {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        height: 10vh;
+    }
+}
+
 .header-list > h4 {
     padding-inline: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .header-list > h4 {
+       padding-inline: 0;
+        margin-block: 3.5rem;
+        margin-inline: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header-list > h4 {
+        padding-inline: 0;
+        margin-block: 5.5rem;
+        margin-inline: auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-list > h4 {
+        padding-inline: 20px;
+        margin-block: -1rem;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .header-list > h4 {
+        padding-inline: 40px;
+        margin-block: -1rem;
+    }
+}
+
 
 .header-list > h4 > a {
     text-decoration: none;
@@ -29,21 +270,171 @@
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 600px) {
+    .header-list > h4 > a {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header-list > h4 > a {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-list > h4 > a {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-list > h4 > a {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .header-list > h4 > a {
+        font-size: 1.7rem;
+    }
+}
+
+.toggle-button {
+    position: absolute;
+    right: 2rem;
+    top: 2.5rem;
+    width: 30px;
+    height: auto;
+    display: none;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+    .toggle-button {
+        right: 1.2rem;
+        top: 1rem;
+        display: block;
+    } 
+}
+
+@media only screen and (min-width: 600px) {
+    .toggle-button {
+        right: 1.2rem;
+        top: 1rem;
+        display: block;
+        width: 60px;
+        height: 50px;
+    } 
+}
+
+@media only screen and (min-width: 600px) {
+    .toggle-button {
+        display: none;
+    } 
+}
+
+
 .header-description {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-description {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header-description {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin-bottom: 0rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-description {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+        margin-bottom: 8rem;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .header-description {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 14rem;
+    }
+}
+
+
+@media only screen and (min-width: 1800px) {
+    .header-description {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10rem;
+    }
 }
 
 .header-description-intro {
-    width: 100vw;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-description-intro {
+        width: 100%;
+    }
 }
 
 .header-description-title {
     font-size: 2rem;
     line-height: 2.2rem;
+    margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .header-description-title {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header-description-title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-description-title {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+
+@media only screen and (min-width: 1800px) {
+    .header-description-title {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+
 
 .header-description-title span {
     display: block;
@@ -52,11 +443,118 @@
     font-weight: 700;
 }
 
+@media only screen and (max-width: 600px) {
+    .header-description-title span {
+        font-size: 2rem;
+        line-height: 2.7rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header-description-title span {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-description-title span {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header-description-title span {
+        font-size: 5rem;
+        line-height: 6.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header-description-title span {
+        font-size: 6.5rem;
+        line-height: 7.5rem;
+    }
+}
+
+.header-intro {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-intro {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header-intro {
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-intro {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-intro {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+}
+
 .header-img {
     width: 70%;
     height: 60vh;
     overflow: hidden;
     border-radius: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-img {
+        width: 55%;
+        height: 40vh;
+    } 
+}
+
+@media only screen and (min-width: 600px) {
+    .header-img {
+        width: 50%;
+        height: 35vh;
+        object-fit: cover;
+    } 
+}
+
+@media only screen and (min-width: 900px) {
+    .header-img {
+        width: 40%;
+        height: 55vh;
+        object-fit: cover;
+    } 
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .header-img {
+        width: 40%;
+        height: 45vh;
+        object-fit: cover;
+    } 
+}
+
+@media only screen and (min-width: 1800px) {
+    .header-img {
+        width: 45%;
+        height: 60vh;
+        object-fit: cover;
+    } 
 }
 
 img.header-img {
@@ -71,14 +569,125 @@ img.header-img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-self: flex-end;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        padding: 20px 10px;
+        gap: 1rem
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .footer {
+        padding: 25px 20px;
+        gap: 1rem
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .footer {
+        padding: 35px 30px;
+        gap: 1rem
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer {
+        padding: 30px 50px;
+        gap: 1rem
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer {
+        padding: 40px 100px;
+        gap: 1rem
+    }
 }
 
 .footer small {
     font-size: 1rem
 }
 
+@media only screen and (max-width: 600px) {
+    .footer small {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .footer small {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .footer small {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .footer small {
+        font-size: 1.6rem;
+    }
+}
+
+
 .footer h3 {
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer h3 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: end;
+    }
+
+    .footer h3 span {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .footer h3 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        text-align: end;
+    }
+
+    .footer h3 span {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .footer h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .footer h3 span {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .footer h3 {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    .footer h3 span {
+        display: inline-block;
+    }
 }
 
 .footer h3 span {
@@ -86,4 +695,28 @@ img.header-img {
     font-weight: 600;
     color: #7ED57B;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer h3 span {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .footer h3 span {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .footer h3 span {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .footer h3 span {
+        font-size: 1.9rem;
+    }
 }

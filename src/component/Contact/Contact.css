@@ -1,6 +1,12 @@
-.header-container {
+/* .header-container {
     padding: 40px 100px;
     margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        padding: 20px 10px;
+    }    
 }
 
 .contact-header-page {
@@ -8,6 +14,15 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-header-page {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5%;
+    } 
 }
 
 
@@ -109,4 +124,4 @@ img.contact-socials-linkedin {
     height: auto;
     background: #FFF;
     border-radius: 100px;
-}
+} */
