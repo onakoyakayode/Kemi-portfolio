@@ -1,28 +1,30 @@
 import React from 'react';
 import './Header.css'
 import myPic from '../../images/my-pic.jpg'
+import Toggle from '../../icons/toggle.svg'
 import 'animate.css'
 import { Link } from 'react-router-dom'
 
 
 
 
-const Header = () => {
+const Header = (props) => {
 
     function handleClick() {
         return window.open('http://github.com/onakoyakayode')
     }
 
     return (
-        <div>
+        <div className="new-header">
             <header className="header-container">
+                <img src={Toggle} className="toggle-button" alt="toggle-button"/>
                 <div className="header-page-container">
-                    <h1 className="header-title">TemiKemi</h1>
+                    <h1 className={"header-title"}>{props.Title}</h1>
                     <ul className='header-list'>
-                        <h4><Link to='/'>Home</Link></h4>
-                        <h4><Link to='/portfolio'>Portfolio</Link></h4>
-                        <h4><Link to='/resume'>Resume</Link></h4>
-                        <h4><Link to='/contact'>Contact</Link></h4>
+                        <h4><Link to='/'>{props.Home}</Link></h4>
+                        <h4><Link to='/portfolio'>{props.Portfolio}</Link></h4>
+                        <h4><Link to='/resume'>{props.Resume}</Link></h4>
+                        <h4><Link to='/contact'>{props.Contact}</Link></h4>
                     </ul>
                 </div>
                 <div className='header-description'>

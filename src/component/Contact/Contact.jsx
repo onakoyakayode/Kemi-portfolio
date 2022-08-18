@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const Contact = () => {
+const Contact = (props) => {
 
     function handleEmail() {
         return window.open("mailto:otolayinka@ualr.edu")
@@ -42,12 +42,12 @@ const Contact = () => {
         <div>
             <div className='header-container'>
                 <div className="contact-header-page">
-                    <h1 className="header-title">TemiKemi</h1>
+                    <h1 className="header-title">{props.Title}</h1>
                     <ul className='header-list'>
-                        <h4><Link to='/'>Home</Link></h4>
-                        <h4><Link to='/portfolio'>Portfolio</Link></h4>
-                        <h4><Link to='/resume'>Resume</Link></h4>
-                        <h4><Link to='/contact'>Contact</Link></h4>
+                        <h4><Link to='/'>{props.Home}</Link></h4>
+                        <h4><Link to='/portfolio'>{props.Portfolio}</Link></h4>
+                        <h4><Link to='/resume'>{props.Resume}</Link></h4>
+                        <h4><Link to='/contact'>{props.Contact}</Link></h4>
                     </ul>
                 </div>
                 <div className='contact-container'>

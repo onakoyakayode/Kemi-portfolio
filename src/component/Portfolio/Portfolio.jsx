@@ -2,11 +2,11 @@ import React from "react";
 import './Portfolio.css';
 import ErrandHQ from "../../images/ErrandHQ.png"
 import TAFabrics from "../../images/T.A-Fabrics.png"
+import 'animate.css'
 import { Link } from 'react-router-dom'
 
 
-const Portfolio = () => {
-
+const Portfolio = (props) => {
     const ErrandHq = () => {
         return window.open('https://www.google.com')
     }
@@ -20,36 +20,36 @@ const Portfolio = () => {
         <div>
             <div className="header-container">
                 <div className="portfolio-header-page">
-                    <h1 className="header-title">TemiKemi</h1>
+                    <h1 className="header-title">{props.Title}</h1>
                     <ul className='header-list'>
-                        <h4><Link to='/'>Home</Link></h4>
-                        <h4><Link to='/portfolio'>Portfolio</Link></h4>
-                        <h4><Link to='/resume'>Resume</Link></h4>
-                        <h4><Link to='/contact'>Contact</Link></h4>
+                        <h4><Link to='/'>{props.Home}</Link></h4>
+                        <h4><Link to='/portfolio'>{props.Portfolio}</Link></h4>
+                        <h4><Link to='/resume'>{props.Resume}</Link></h4>
+                        <h4><Link to='/contact'>{props.Contact}</Link></h4>
                     </ul>
                 </div>
                 <div className="projects-container">
-                    <div className="projects-list">
+                    <div className="projects-list animate__animated animate__slideInUp">
                         <img src={ErrandHQ} className="project-img" alt="Project-link" />
                         <h4 onClick={ErrandHq} className="project-heading">ErrandHQ</h4>
                     </div>
-                    <div className="projects-list">
+                    <div className="projects-list animate__animated animate__slideInUp animate__delay-1s">
                         <img src={TAFabrics} className="project-img" alt="Project-link" />
                         <h4 onClick={ErrandHq} className="project-heading1">ErrandHQ</h4>
                     </div>
-                    <div className="projects-list">
+                    <div className="projects-list animate__animated animate__slideInUp animate__delay-2s">
                         <img src={ErrandHQ} className="project-img" alt="Project-link" />
                         <h4 onClick={ErrandHq} className="project-heading2">ErrandHQ</h4>
                     </div>
-                    <div className="projects-list">
+                    <div className="projects-list animate__animated animate__slideInUp animate__delay-3s">
                         <img src={TAFabrics} className="project-img" alt="Project-link" />
                         <h4 onClick={ErrandHq} className="project-heading3">ErrandHQ</h4>
                     </div>
-                    <div className="projects-list">
+                    <div className="projects-list animate__animated animate__slideInUp animate__delay-4s">
                         <img src={ErrandHQ} className="project-img" alt="Project-link" />
                         <h4 onClick={ErrandHq} className="project-heading4">ErrandHQ</h4>
                     </div>
-                    <div className="projects-list">
+                    <div className="projects-list animate__animated animate__slideInUp animate__delay-5s">
                         <img src={TAFabrics} className="project-img" alt="Project-link" />
                         <h4 onClick={ErrandHq} className="project-heading5">ErrandHQ</h4>
                     </div>
