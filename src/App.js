@@ -15,16 +15,40 @@ function App() {
           <Route exact path='/' element = {<Home />} /> 
         </Routes>
         <Routes>
-          < Route path='/header' element = {<Header />} />
+          < Route path='/header' element = {<Header 
+            Title="Temi-Kemi"
+            Home="Home"  
+            Portfolio="Portfolio"
+            Resume="Resume"
+            Contact = "Contact"
+          />} />
         </Routes>
         <Routes>
-          <Route path='/portfolio' element = {<Portfolio />} />
+          <Route path='/portfolio' element = {<Portfolio 
+          Title="Temi-Kemi"
+          Home="Home"  
+          Portfolio="Portfolio"
+          Resume="Resume"
+          Contact = "Contact"
+          />} />
         </Routes>
         <Routes>
-          <Route path='/resume' element = {<Resume />} />
+          <Route path='/resume' element = {<Resume 
+          Title="Temi-Kemi"
+          Home="Home"  
+          Portfolio="Portfolio"
+          Resume="Resume"
+          Contact = "Contact"
+          />} />
         </Routes>
         <Routes>
-          <Route path='/contact' element = {<Contact />} />
+          <Route path='/contact' element = {<Contact 
+          Title="Temi-Kemi"
+          Home="Home"  
+          Portfolio="Portfolio"
+          Resume="Resume"
+          Contact = "Contact"
+          />} />
         </Routes>
       </Router>
     </div>
