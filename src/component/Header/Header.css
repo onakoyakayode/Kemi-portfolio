@@ -73,7 +73,7 @@
     } 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1800px) {
     .header-container {
         padding: 50px 100px;
     } 
@@ -122,7 +122,7 @@
     } 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1800px) {
     .header-page-container {
         flex-direction: row;
         justify-content: space-between;
@@ -223,7 +223,7 @@
         width: 100%;
         background: #fff;
         position: relative;
-        height: 10vh;
+        height: 12vh;
     }
 }
 
@@ -255,6 +255,14 @@
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    .header-list > h4 {
+        padding-inline: 20px;
+        margin-block: -1rem;
+    }
+}
+
+
 @media only screen and (min-width: 1800px) {
     .header-list > h4 {
         padding-inline: 40px;
@@ -278,7 +286,7 @@
 
 @media only screen and (min-width: 600px) {
     .header-list > h4 > a {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -288,15 +296,15 @@
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1200px) {
     .header-list > h4 > a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
 @media only screen and (min-width: 1800px) {
     .header-list > h4 > a {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -422,7 +430,7 @@
 
 @media only screen and (min-width: 900px) {
     .header-description-title {
-        font-size: 3rem;
+        font-size: 2.9rem;
         line-height: 4rem;
     }
 }
@@ -466,12 +474,12 @@
 
 @media only screen and (min-width: 1200px) {
     .header-description-title span {
-        font-size: 5rem;
+        font-size: 5.5rem;
         line-height: 6.5rem;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1800px) {
     .header-description-title span {
         font-size: 6.5rem;
         line-height: 7.5rem;
@@ -503,9 +511,9 @@
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1200px) {
     .header-intro {
-        font-size: 1.8rem;
+        font-size: 1.85rem;
         line-height: 2.4rem;
     }
 }
@@ -544,7 +552,7 @@
 @media only screen and (min-width: 1200px) {
     .header-img {
         width: 40%;
-        height: 45vh;
+        height: 55vh;
         object-fit: cover;
     } 
 }
@@ -592,19 +600,19 @@ img.header-img {
 
 @media only screen and (min-width: 900px) {
     .footer {
-        padding: 35px 30px;
+        padding: 35px;
         gap: 1rem
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .footer {
-        padding: 30px 50px;
+        padding: 25px 50px;
         gap: 1rem
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1800px) {
     .footer {
         padding: 40px 100px;
         gap: 1rem
@@ -629,13 +637,19 @@ img.header-img {
 
 @media only screen and (min-width: 900px) {
     .footer small {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer small {
         font-size: 1.4rem;
     }
 }
 
 @media only screen and (min-width: 1800px) {
     .footer small {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -670,8 +684,19 @@ img.header-img {
 
 @media only screen and (min-width: 900px) {
     .footer h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 2rem;
+    }
+
+    .footer h3 span {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer h3 {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
     }
 
     .footer h3 span {
@@ -705,13 +730,19 @@ img.header-img {
 
 @media only screen and (min-width: 600px) {
     .footer h3 span {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
 @media only screen and (min-width: 900px) {
     .footer h3 span {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer h3 span {
+        font-size: 1.5rem;
     }
 }
 
