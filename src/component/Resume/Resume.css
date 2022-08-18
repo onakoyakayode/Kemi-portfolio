@@ -1,3 +1,12 @@
+.new-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+
 .resume-container {
     background-color: black;
     color: white;
@@ -16,9 +25,50 @@
     margin-bottom: 10%;
 }
 
+
+.toggle-button {
+    position: absolute;
+    right: 2rem;
+    top: 2.5rem;
+    width: 30px;
+    height: auto;
+    display: none;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+    .toggle-button {
+        right: 1.2rem;
+        top: 1rem;
+        display: block;
+    } 
+}
+
+@media only screen and (min-width: 600px) {
+    .toggle-button {
+        right: 1.2rem;
+        top: 1rem;
+        display: block;
+        width: 60px;
+        height: 50px;
+    } 
+}
+
+@media only screen and (min-width: 900px) {
+    .toggle-button {
+        display: none;
+    } 
+}
+
+
 .header-resume-list h4 a {
     color: white;
 } 
+
+#header-resume-list {
+    color: #fff;
+    background: transparent;
+}
 
 .resume-description {
     display: flex;
@@ -27,14 +77,92 @@
     gap: 5rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .resume-description {
+        margin-top: 30%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .resume-description {
+        margin-top: 30%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .resume-description {
+        margin-top: 15%;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 5rem;
+    }
+}
+
 .resume-description-container {
     width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .resume-description-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .resume-description-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .resume-description-container {
+        width: 60%;
+        margin-bottom: 10%;
+    }
 }
 
 .resume-description-details {
     margin-bottom: 1.5rem;
     font-size: 2rem;
     line-height: 2.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .resume-description-details {
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .resume-description-details {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .resume-description-details {
+        margin-bottom: 1.5rem;
+        font-size: 2.3rem;
+        line-height: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .resume-description-details {
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
 }
 
 .resume-description-list {
@@ -44,6 +172,37 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .resume-description-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .resume-description-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 10% 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .resume-description-list {
+        margin: 7% 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .resume-description-list {
+        margin: 3% 0;
+    }
+}
+
 .resume-description-list > li {
     list-style: disc;
     list-style-position: inside;
@@ -51,11 +210,71 @@
     font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .resume-description-list > li {
+        list-style: square;
+        list-style-position: inside;
+        padding-block: 0.8rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .resume-description-list > li {
+        list-style: square;
+        list-style-position: inside;
+        font-size: 1.4rem;
+        margin-block: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .resume-description-list > li {
+        list-style: square;
+        list-style-position: inside;
+        font-size: 1.6rem;
+        margin-block: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .resume-description-list > li {
+        list-style: square;
+        list-style-position: inside;
+        font-size: 1.5rem;
+        margin-block: 1.1rem;
+    }
+}
+
 .resume-download-link {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .resume-download-link {
+        gap: .5rem;
+        margin-bottom: 30%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .resume-download-link {
+        gap: 2rem;
+        margin-bottom: 30%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .resume-download-link {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        margin-bottom: 0%;
+    }
 }
 
 .resume-download {
@@ -64,9 +283,39 @@
     font-size: 1.2rem;
     font-weight: 600;
     border-radius: 6px;
-    opacity: 1;
+    opacity: 0.8;
     transition: all 0.4s ease-in-out;
 }
+
+@media only screen and (max-width: 600px) {
+    .resume-download {
+        padding: 15px 20px;
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .resume-download {
+        padding: 20px 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .resume-download {
+        padding: 20px 40px;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .resume-download {
+        padding: 20px 40px;
+        font-size: 1.4rem;
+    }
+}
+
 
 a.resume-download,
 a.resume-view {
@@ -80,15 +329,54 @@ a.resume-view {
     font-size: 1.2rem;
     font-weight: 600;
     border-radius: 6px;
-    opacity: 1;
+    opacity: 0.8;
     transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .resume-view {
+        padding: 15px 20px;
+        font-size: 1.2rem;
+        font-weight: 900;
+    } 
+}
+
+@media only screen and (min-width: 600px) {
+    .resume-view {
+        padding: 20px 40px;
+        font-size: 1.2rem;
+    } 
+}
+
+@media only screen and (min-width: 900px) {
+    .resume-view {
+        padding: 20px 40px;
+        font-size: 1.3rem;
+    } 
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .resume-view {
+        padding: 20px 40px;
+        font-size: 1.4rem;
+    } 
 }
 
 .resume-view:hover,
 .resume-download:hover {
-    opacity: 0.9;
-    transform: translateY(-10px);
+    opacity: 1;
+    transform: translateY(-40px);
 }
+
+@media only screen and (min-width: 1200px) {
+    .resume-view:hover,
+    .resume-download:hover {
+    opacity: 1;
+    transform: translateX(-40px);
+}
+}
+
 
 .resume-footer {
     background: #fff;
