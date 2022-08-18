@@ -2,6 +2,7 @@ import React from "react";
 import './Portfolio.css';
 import ErrandHQ from "../../images/ErrandHQ.png"
 import TAFabrics from "../../images/T.A-Fabrics.png"
+import Toggle from '../../icons/toggle.svg'
 import 'animate.css'
 import { Link } from 'react-router-dom'
 
@@ -17,8 +18,9 @@ const Portfolio = (props) => {
 
 
     return (
-        <div>
+        <div className="new-header">
             <div className="header-container">
+                <img src={Toggle} className="toggle-button" alt="toggle-button"/>
                 <div className="portfolio-header-page">
                     <h1 className="header-title">{props.Title}</h1>
                     <ul className='header-list'>
@@ -54,9 +56,9 @@ const Portfolio = (props) => {
                         <h4 onClick={ErrandHq} className="project-heading5">ErrandHQ</h4>
                     </div>
                 </div>
-                <div className="resume-link">
+                {/* <div className="resume-link">
                     <h4><Link to='/resume'>Resume</Link></h4>
-                </div>
+                </div> */}
             </div>
             <footer className='footer'>
                 <small>&copy;Oluwakemi, 2022. Copyright reserved</small>

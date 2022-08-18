@@ -5,6 +5,7 @@ import Github from '../../icons/github.svg'
 import Discord from '../../icons/discord.svg'
 import Twitter from '../../icons/twitter.svg'
 import Linkedin from '../../icons/linkedin.svg'
+import Toggle from '../../icons/toggle.svg'
 import { Link } from 'react-router-dom'
 
 
@@ -39,9 +40,10 @@ const Contact = (props) => {
 
 
     return (
-        <div>
+        <div className='new-header'>
             <div className='header-container'>
                 <div className="contact-header-page">
+                    <img src={Toggle} className="toggle-button" alt="toggle-button"/>
                     <h1 className="header-title">{props.Title}</h1>
                     <ul className='header-list'>
                         <h4><Link to='/'>{props.Home}</Link></h4>

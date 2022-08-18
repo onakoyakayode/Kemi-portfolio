@@ -1,6 +1,7 @@
 import React from 'react';
 import './Resume.css'
 import resume from '../../resume/OluwakemiResume.pdf';
+import Toggle from '../../icons/toggle-white.svg'
 import 'animate.css'
 import { Link } from 'react-router-dom'
 
@@ -12,12 +13,14 @@ const Resume = (props) => {
     function handleClick() {
         return window.open('http://github.com/onakoyakayode')
     }
+
     return (
-        <div>
+        <div className='new-header'>
             <div className='header-container resume-container' id='resume-id'>
                 <div className="resume-header-page">
+                    <img src={Toggle} className="toggle-button" alt="toggle-button"/>
                     <h1 className="header-title">{props.Title}</h1>
-                    <ul className='header-list header-resume-list'>
+                    <ul className='header-list header-resume-list' id='header-resume-list'>
                         <h4><Link to='/'>{props.Home}</Link></h4>
                         <h4><Link to='/portfolio'>{props.Portfolio}</Link></h4>
                         <h4><Link to='/resume'>{props.Resume}</Link></h4>
