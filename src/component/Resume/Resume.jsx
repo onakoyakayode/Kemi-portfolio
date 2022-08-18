@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const Resume = () => {
+const Resume = (props) => {
 
     function handleClick() {
         return window.open('http://github.com/onakoyakayode')
@@ -16,12 +16,12 @@ const Resume = () => {
         <div>
             <div className='header-container resume-container' id='resume-id'>
                 <div className="resume-header-page">
-                    <h1 className="header-title">TemiKemi</h1>
+                    <h1 className="header-title">{props.Title}</h1>
                     <ul className='header-list header-resume-list'>
-                        <h4><Link to='/'>Home</Link></h4>
-                        <h4><Link to='/portfolio'>Portfolio</Link></h4>
-                        <h4><Link to='/resume'>Resume</Link></h4>
-                        <h4><Link to='/contact'>Contact</Link></h4>
+                        <h4><Link to='/'>{props.Home}</Link></h4>
+                        <h4><Link to='/portfolio'>{props.Portfolio}</Link></h4>
+                        <h4><Link to='/resume'>{props.Resume}</Link></h4>
+                        <h4><Link to='/contact'>{props.Contact}</Link></h4>
                     </ul>
                 </div>
                 <div className="resume-description">
